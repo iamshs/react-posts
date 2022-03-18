@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Post from '../Post/Post';
+import './Posts.css'
 
 const Posts = () => {
     const [posts,setPosts] = useState([])
@@ -11,13 +12,15 @@ const Posts = () => {
     },[])
     return (
         <div>
-            <h1>All Posts:{posts.length}</h1>
-          {
+            <h1 className='post-header'>All Posts:{posts.length}</h1>
+        <div className='post-container'>
+           {
               posts.map(post => <Post
                  post={post}
                  key ={post.id}
               ></Post> )
-          }  
+           }  
+        </div>
         </div>
     );
 };

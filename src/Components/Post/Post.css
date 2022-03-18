@@ -1,7 +1,7 @@
 .post{
-    background-color: lightcyan;
-    margin: 20px;
-    padding: 20px;
-    border: 1px solid gold;
+    background-color: rgb(214, 214, 214);
+    margin: 40px;
+    padding: 30px;
+    border: 1px solid rgb(202, 196, 159);
     border-radius: 10px;
 }
